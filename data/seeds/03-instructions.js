@@ -1,10 +1,10 @@
 
 exports.seed = function(knex) {
   // Deletes ALL existing entries
-  return knex('Directions').truncate()
+  return knex('Instructions').truncate()
     .then(function () {
       // Inserts seed entries
-      return knex('Directions').insert([
+      return knex('Instructions').insert([
         {id: 1, RecipeID: 1, Step_Number: 1, Step: 'Preheat oven to 350'},
         {id: 2, RecipeID: 1, Step_Number: 2, Step: 'Save a 1/4 cup of flour. Cut the one cup of the butter into the flour until it resembles clumpy sand, add cold water until the dough is pliable and can be rolled put. Remember to work quick. Roll out into a top and bottom crust. Set in fridge.'},
         {id: 3, RecipeID: 1, Step_Number: 3, Step: 'Dice the onions, celery, and carrots. Sweat them in a pan.'},
